@@ -215,9 +215,9 @@
                     <intrinsic_permeability>1e-22</intrinsic_permeability>
                     <initial_aperture>0.</initial_aperture>
                     <initial_creation_aperture>0.</initial_creation_aperture>
-                    <mean_frac_distance>2.111697144e-2</mean_frac_distance>
-                    <threshold_strain>-4.735527549e-4</threshold_strain>
-                    <fracture_normal>-0.906307787 0.422618262 0</fracture_normal>
+                    <mean_frac_distance>0.021116971437953946</mean_frac_distance>
+                    <threshold_strain>-0.0004735527549195244</threshold_strain>
+                    <fracture_normal>-0.9063077870366499 0.4226182617406995 0</fracture_normal>
                     <fracture_rotation_xy>Zero</fracture_rotation_xy>
                     <fracture_rotation_yz>Zero</fracture_rotation_yz>
                     <jacobian_factor>1</jacobian_factor>
@@ -240,12 +240,12 @@
         <parameter>
             <name>e1</name>
             <type>Constant</type>
-            <values>-0.422618262 -0.906307787 0.</values>
+            <values>-0.4226182617406995 -0.9063077870366499 0.</values>
         </parameter>
         <parameter>
             <name>e0</name>
             <type>Constant</type>
-            <values>-0.906307787 0.422618262 0.</values>
+            <values>-0.9063077870366499 0.4226182617406995 0.</values>
         </parameter>        
         <parameter>
             <name>e2</name>
@@ -468,15 +468,6 @@
                 <max_iteration_step>50000</max_iteration_step>
                 <error_tolerance>1e-12</error_tolerance>
             </eigen>
-            <petsc>
-               <parameters>
-                  -ksp_type gmres
-                  -pc_type mg
-                  -ksp_atol 1e-6
-                  -ksp_rtol 1e-6
-                  -ksp_monitor
-               </parameters>
-            </petsc>
         </linear_solver>
     </linear_solvers>
 </OpenGeoSysProject>
