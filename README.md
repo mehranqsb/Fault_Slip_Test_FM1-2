@@ -1,1 +1,1 @@
-# Falut_Slip_Test_FM1-2
+# Fault_Slip_Tests_FM1-2
